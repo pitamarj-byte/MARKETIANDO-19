@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketiando 19 - Agencia Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">MARKETIANDO 19</div>
+
+        <!-- MENU DESKTOP -->
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- MENU MÓVIL -->
+        <div class="menu-mobile" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- MENU DESPLEGABLE MÓVIL -->
+    <div id="mobileMenu" class="mobile-menu-hidden">
+        <a href="#home" onclick="toggleMenu()">Inicio</a>
+        <a href="#servicios" onclick="toggleMenu()">Servicios</a>
+        <a href="#portafolio" onclick="toggleMenu()">Portafolio</a>
+        <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h1>TRANSFORMAMOS TU PRESENCIA DIGITAL</h1>
+        <p>Agencia de marketing en Bogotá especializada en diseño gráfico, contenido audiovisual y estrategias digitales que impulsan tu marca.</p>
+
+        <div class="hero-buttons">
+            <a href="#servicios" class="btn-primary">Ver Servicios</a>
+            <a href="#portafolio" class="btn-secondary">Nuestro Portafolio</a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+        <h2>Servicios</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Diseño Gráfico</h3>
+                <p>Branding, diseño corporativo, contenido para redes y piezas publicitarias.</p>
+            </div>
+            <div class="card">
+                <h3>Marketing Digital</h3>
+                <p>Gestión de redes, anuncios, embudos de venta y posicionamiento orgánico.</p>
+            </div>
+            <div class="card">
+                <h3>Desarrollo Web</h3>
+                <p>Páginas web funcionales, optimizadas y adaptadas a cualquier dispositivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="section dark">
+        <h2>Portafolio</h2>
+        <div class="grid">
+            <div class="card">Proyecto 1</div>
+            <div class="card">Proyecto 2</div>
+            <div class="card">Proyecto 3</div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Marketiando 19 · Todos los derechos reservados</p>
+    </footer>
+
+<script>
+function toggleMenu() {
+    let menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("mobile-menu-show");
+}
+</script>
+
+</body>
+</html>
